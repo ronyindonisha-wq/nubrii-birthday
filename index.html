@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#ff4f91">
+<title>Nubrii My Sweetheart 💖</title>
+<style>
+:root{--pink:#ff4f91;--deep:#8c174f;--cream:#fff7fb}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;color:#fff;background:#180b19;overflow-x:hidden}
+body:before{content:"";position:fixed;inset:0;z-index:-2;background:radial-gradient(ellipse at 20% 10%,#6e1a4c 0,transparent 45%),radial-gradient(ellipse at 85% 65%,#38205e 0,transparent 42%),#180b19}
+button{font:inherit;cursor:pointer}
+.hero{min-height:100svh;display:grid;place-items:center;text-align:center;padding:42px 20px;position:relative;isolation:isolate}
+.hero:after{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(180deg,#180b191c,#180b19b8)}
+.glow{position:absolute;width:280px;height:280px;border-radius:50%;background:#ff4f9140;filter:blur(70px);z-index:-1;animation:pulse 4s infinite alternate}
+.hero-inner{max-width:780px}
+.eyebrow{letter-spacing:.25em;text-transform:uppercase;font-size:.75rem;color:#ffc5dc}
+h1{font-family:Georgia,serif;font-size:clamp(2.7rem,10vw,6.5rem);line-height:.98;margin:18px 0;color:#fff0f7;text-shadow:0 0 30px #ff4f9170}
+.subtitle{font-size:clamp(1rem,3vw,1.25rem);color:#f9dce9;max-width:580px;margin:0 auto 26px}
+.heart{font-size:3rem;display:inline-block;animation:beat 1.1s infinite}
+.btn{border:0;border-radius:999px;padding:14px 23px;background:linear-gradient(120deg,#ff77ad,#ff3e8a);color:white;font-weight:750;box-shadow:0 10px 30px #ff3e8a40;transition:transform .2s}
+.btn:hover{transform:translateY(-2px)}
+section{padding:70px 18px}
+.section-inner{max-width:1050px;margin:auto}
+.section-title{text-align:center;font:clamp(2rem,6vw,3.3rem) Georgia,serif;margin:0 0 12px}
+.section-note{text-align:center;color:#edc5d7;margin:0 auto 34px;max-width:600px}
+.gallery{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:16px}
+.photo{border:1px solid #ffffff22;background:#ffffff0b;padding:8px;border-radius:20px;overflow:hidden;box-shadow:0 16px 38px #0003;transition:transform .25s}
+.photo:hover{transform:translateY(-5px) rotate(.3deg)}
+.photo img{width:100%;height:330px;object-fit:cover;display:block;border-radius:14px}
+.photo p{text-align:center;margin:11px 4px 5px;color:#ffe0ed;font-family:Georgia,serif;font-style:italic}
+.letter-wrap{max-width:760px;margin:auto;padding:30px;border:1px solid #ffb4d433;border-radius:24px;background:linear-gradient(145deg,#ffffff12,#ffffff06);box-shadow:0 20px 60px #0002}
+.letter-wrap p{font:1.12rem/1.9 Georgia,serif;color:#ffe8f1;white-space:pre-line}
+.cake{font-size:4rem;text-align:center;margin:0 0 12px}
+.countdown{text-align:center;border:1px solid #ffb4d433;border-radius:22px;padding:24px;background:#ffffff0a;max-width:680px;margin:auto}
+.countdown input{max-width:230px;padding:11px;border-radius:10px;border:1px solid #ffc5dc;background:#fff;color:#4a1230}
+.countdown-result{margin-top:15px;color:#ffd7e7;font-weight:650}
+footer{text-align:center;padding:32px 18px 50px;color:#dca9c1;font-size:.9rem}
+.floating-heart{position:fixed;bottom:-30px;pointer-events:none;z-index:5;animation:floatUp linear forwards;opacity:.85}
+.hidden{display:none}
+@keyframes beat{0%,100%{transform:scale(1)}50%{transform:scale(1.18)}}
+@keyframes pulse{to{transform:scale(1.25);opacity:.6}}
+@keyframes floatUp{to{transform:translateY(-110vh) rotate(25deg);opacity:0}}
+@media(max-width:520px){section{padding:55px 14px}.photo img{height:360px}.letter-wrap{padding:22px}}
+</style>
+</head>
+<body>
+<header class="hero" id="top">
+  <div class="glow"></div>
+  <div class="hero-inner">
+    <div class="heart">💖</div>
+    <div class="eyebrow">A little surprise made with love</div>
+    <h1>Nubrii<br>My Sweetheart</h1>
+    <p class="subtitle">Today is all about you — your smile, your happiness, and the beautiful memories that make you special.</p>
+    <button class="btn" onclick="document.querySelector('#memories').scrollIntoView({behavior:'smooth'})">Open your surprise ✨</button>
+  </div>
+</header>
+
+<section id="memories">
+  <div class="section-inner">
+    <h2 class="section-title">Beautiful Memories 📸</h2>
+    <p class="section-note">Every picture holds a little moment worth keeping forever.</p>
+    <div class="gallery">
+      <article class="photo"><img src="photos/nubrii-1.jpg" alt="Nubrii photo 1"><p>Your lovely smile 💗</p></article>
+      <article class="photo"><img src="photos/nubrii-2.jpg" alt="Nubrii photo 2"><p>Beautiful in every moment 🌸</p></article>
+      <article class="photo"><img src="photos/nubrii-3.jpg" alt="Nubrii photo 3"><p>A memory to treasure ✨</p></article>
+      <article class="photo"><img src="photos/nubrii-4.webp" alt="Nubrii photo 4"><p>My sweetheart, always 💞</p></article>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="section-inner">
+    <h2 class="section-title">A Letter For You 💌</h2>
+    <p class="section-note">From my heart to yours.</p>
+    <div class="letter-wrap">
+      <div class="cake">🎂</div>
+      <p>Happy Birthday, Nubrii! ❤️
+
+I hope your day is filled with laughter, peace, sweet surprises, and all the happiness you deserve. Keep smiling, keep shining, and never forget how special you are.
+
+May this new year of your life bring you beautiful memories, wonderful opportunities, and countless reasons to smile.
+
+You make ordinary moments feel magical. Today, I’m sending you all my warmest wishes and a little reminder that you are truly precious.
+
+Happy Birthday, my sweetheart! 💖
+
+Forever sending you love,
+Your Sweetheart 🌹</p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="section-inner">
+    <h2 class="section-title">Make a Birthday Wish 🌟</h2>
+    <p class="section-note">Take a deep breath, close your eyes, and make a wish.</p>
+    <div class="countdown">
+      <div style="font-size:2.5rem">🕯️ 💗 🕯️</div>
+      <button class="btn" id="wishBtn">I made a wish ✨</button>
+      <p class="countdown-result" id="wishResult" aria-live="polite"></p>
+    </div>
+  </div>
+</section>
+
+<footer>Made with 💖 especially for <strong>Nubrii My Sweetheart</strong><br><span>May your birthday be as lovely as your heart.</span></footer>
+<script>
+const wishes = [
+  "May all your sweetest dreams come true. 💫",
+  "Wishing you a year full of love and laughter. 🌷",
+  "May happiness find you in every little moment. 💖",
+  "Your wish is between you and the stars. ✨"
+];
+document.getElementById('wishBtn').addEventListener('click',()=>{
+  document.getElementById('wishResult').textContent=wishes[Math.floor(Math.random()*wishes.length)];
+  for(let i=0;i<14;i++) setTimeout(makeHeart,i*90);
+});
+function makeHeart(){
+  const el=document.createElement('span');
+  el.className='floating-heart';
+  el.textContent=['💗','💖','💕','✨'][Math.floor(Math.random()*4)];
+  el.style.left=Math.random()*100+'vw';
+  el.style.fontSize=(16+Math.random()*22)+'px';
+  el.style.animationDuration=(3+Math.random()*3)+'s';
+  document.body.appendChild(el);
+  setTimeout(()=>el.remove(),6500);
+}
+setInterval(()=>{if(Math.random()>.35)makeHeart()},1200);
+</script>
+</body>
+</html>
